@@ -1,3 +1,44 @@
 .message {
+    display: flex;
+   align-items: flex-end;
+    margin: 10px;
+    background-color: ghostwhite;
+}
 
+.avatar {
+    height: 50px;
+    width: 50px;
+    border: 2px solid forestgreen;
+    border-radius: 50%;
+}
+
+.content {
+    padding: 10px;
+    border-radius: 5px 5px 5px 0;
+    background-color: mediumspringgreen;
+}
+
+.angle {
+    width: 15px;
+    height: 15px;
+/*background-color: red;*/
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0)15px, mediumspringgreen 0);
+}
+
+.text {
+    min-width: 200px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkslategrey;
+}
+
+.time {
+    display: flex;
+    justify-content: flex-end;
+    color: darkslategrey;
 }
