@@ -1,3 +1,46 @@
 .someClass {
 
 }
+
+.bottom {
+    display: grid;
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 15px;
+    grid-template-columns: 50px 50px 50px 50px;
+    column-gap: 15px;
+}
+
+.colorBottom {
+    background-color: #D4E6F1;
+}
+
+.deleteBotton {
+    display: grid;
+    grid-template-columns: 100px 105px 35px;
+    width: 300px;
+    padding-left: 10px;
+}
+
+.deleteBotton2 {
+    background-color: #b3c0e3;
+}
+
+.main {
+    width: 280px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #D4E6F1;
+}
+
+.red {
+    color: red
+}
+
+.orange {
+    color: orange
+}
+
+.green {
+    color: limegreen;
+}
