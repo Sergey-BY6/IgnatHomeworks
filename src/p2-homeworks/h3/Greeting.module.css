@@ -2,6 +2,39 @@
 
 }
 
+.emptyClass {
+    margin-left: 20px;
+}
+
+
+
 .error {
+    margin-left: 20px;
     border: 1px solid red;
 }
+
+.errorText {
+    margin: 0 10px 0 20px;
+    color: #ba202a;
+    font-size: 14px;
+}
+
+.button {
+    margin-left: 20px;
+    background-color: lightgreen;
+}
+
+
+.totalUsers {
+    margin-left:  10px;
+    padding-top: 5px;
+}
+
+.mainHW3 {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 20px 0 5px 0;
+    background-color: lavender;
+    width: 300px;
+}
+
