@@ -11,9 +11,82 @@
     column-gap: 15px;
 }
 
-.colorBottom {
-    background-color: #D4E6F1;
+/*.colorButton {*/
+/*    background-color: #D4E6F1;*/
+/*    border: 1px solid black;*/
+/*    border-radius: 2px;*/
+/*}*/
+
+/*.colorButton {*/
+/*    !*background-color: #D4E6F1;*!*/
+/*    !*border: 1px solid black;*!*/
+/*    border-radius: 4px;*/
+/*    color: #011821f9;*/
+/*    text-align: center;*/
+/*    font-family: Arial, Helvetica, sans-serif;*/
+/*    background-color: rgb( 168, 224, 247, 0.84);*/
+/*    border: 1px solid rgb( 33, 126, 74 );*/
+/*}*/
+
+/*.colorButton:hover {*/
+/*    background-color: rgb( 28, 171, 232, 0.98 );*/
+/*}*/
+
+
+.colorButton {
+    /*display: inline-block;*/
+    box-sizing: border-box;
+    /*padding: 0 13px;*/
+    /*margin: 0 15px 15px 15px;*/
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    height: 25px;
+    /*line-height: 32px;*/
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4986a1;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
 }
+
+.active {
+    background-color: gold;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.colorButton:focus-visible {
+    box-shadow: 0 0 0 3px lightskyblue;
+}
+.colorButton:hover {
+    border-color: transparent;
+    background-color: #327cd1f9 ;
+    color: #fff;
+}
+.colorButton:active {
+    border-color: #6f9cbc !important;
+    background-color: #367089 !important;
+}
+.colorButton:disabled {
+    background-color: #558cb7;
+    color: #fff;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
 
 .deleteBotton {
     display: grid;
@@ -24,6 +97,8 @@
 
 .deleteBotton2 {
     background-color: #b3c0e3;
+    border: 1px solid black;
+    margin: 1px 0 0 0
 }
 
 .main {

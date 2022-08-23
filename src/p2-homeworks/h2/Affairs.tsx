@@ -1,12 +1,13 @@
 import React from 'react'
 import Affair from './Affair'
-import {AffairType, FilterType} from './HW2'
+import { AffairType, FilterType} from './HW2'
 import s from './Affairs.module.css'
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
     setFilter: (priority: FilterType) => void
     deleteAffairCallback: (_id: number) => void
+    filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -18,6 +19,8 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
     console.log(mappedAffairs)
+
+   // let colorButton = `${s.colorButton} ${s.active}`
 
     const setAll = (value: FilterType) => {
         props.setFilter(value)
@@ -32,14 +35,22 @@ function Affairs(props: AffairsPropsType) {
         props.setFilter(value)
     }
 
+
+const setClassName = (value: FilterType) => {
+        return props.filter === value ? `${s.colorButton} ${s.active}`: (
+            props.filter === value ? `${s.colorButton} ${s.active}` : (
+                props.filter === value ? `${s.colorButton} ${s.active}`: (
+                    props.filter === value ? `${s.colorButton} ${s.active}` : s.colorButton)))
+}
+
     return (
         <div>
             {mappedAffairs}
             <div className={s.bottom}>
-                <button className={s.colorBottom} onClick={() => setAll('all')}>All</button>
-                <button className={s.colorBottom} onClick={() => setHigh('high')}>High</button>
-                <button className={s.colorBottom} onClick={() => setMiddle('middle')}>Middle</button>
-                <button className={s.colorBottom} onClick={() => setLow('low')}>Low</button>
+                <button className={setClassName('all')} onClick={() => setAll('all')}>All</button>
+                <button className={setClassName('high')} onClick={() => setHigh('high')}>High</button>
+                <button className={setClassName('middle')} onClick={() => setMiddle('middle')}>Middle</button>
+                <button className={setClassName ('low')} onClick={() => setLow('low')}>Low</button>
             </div>
 
         </div>
